@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.siliwangi {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    margin-bottom: 10px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.informatika {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.subjudul {
+    position: absolute;
+    top: 170px;
+    left: 120px;
+    font-size: 37px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.teks {
+    position: absolute;
+    top: 290px;
+    left: 120px;
+    font-size: 29px;
+    color: #fff;
+}
+
+.torus {
+    position: absolute;
+    top: -110px;
+    right: 510px;    
+    width: 440px;
+}
+
+.task {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 800px;
+}
+
+.kaca {
+    position: absolute;
+    top: 533px;
+    right: 185px;
+    width: 480px;
+}
+
+.bola {
+    position: absolute;
+    top: 315px;
+    right: 17px;
+    width: 470px;
+}
+
+.btn {
+    position: relative;
+    top: 320px;
+    left: -420px;
+    display: flex;
+    justify-content: space-between;
+    background: #6E67FF;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 25px;
+    color: #fff;
+    padding: 15px 40px;
+    margin: 50px;
+}
+
+footer {
+    position: absolute;
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Penyesuaian untuk tampilan pada perangkat Android */
+
+/* Menentukan ukuran font dasar */
+html {
+    font-size: 16px;
+}
+
+/* Media query untuk perangkat Android */
+@media only screen and (max-width: 768px) {
+    /* Mengatur font size agar responsif */
+    html {
+        font-size: 14px;
+    }
+
+    /* Menyesuaikan posisi elemen */
+    .siliwangi,
+    .informatika,
+    .torus,
+    .task,
+    .kaca,
+    .bola {
+        max-width: 200px; /* Mengurangi ukuran maksimum gambar */
+    }
+
+    .siliwangi {
+        top: 5px;
+        left: 25px;
+    }
+
+    .informatika {
+        top: 45px;
+        left: 150px;
+    }
+
+    .subjudul {
+        font-size: 15px; /* Mengurangi ukuran font subjudul */
+        top: 120px;
+        left: 55px;
+    }
+
+    .teks {
+        font-size: 17px; /* Mengurangi ukuran font teks */
+        top: 200px; /* Menyesuaikan posisi */
+        left: 55px;
+        max-width: 300px; /* Mengurangi lebar teks */
+    }
+
+    .torus {
+        top: -40px;
+        right: -35px; /* Menyesuaikan posisi */
+    }
+
+    .task {
+        top: 120px; /* Memindahkan gambar ke bawah */
+        right: -50px; /* Menggeser ke kanan */
+        width: 450px; /* Meningkatkan lebar gambar */
+    }
+    
+
+    .kaca {
+        top: 450px; /* Menyesuaikan posisi */
+        right: 20px; /* Menggeser ke kanan */
+    }
+
+    .bola {
+        top: 280px; /* Menyesuaikan posisi */
+        right: 20px; /* Menggeser ke kanan */
+    }
+
+    /* Merapikan tombol */
+    .btn {
+        top: 250px; /* Menyesuaikan posisi */
+        left: 35%;
+        transform: translateX(-50%);
+        font-size: 15px; /* Mengurangi ukuran font tombol */
+        padding: 15px 20px; /* Mengurangi padding tombol */
+        margin: 24px; /* Mengurangi margin tombol */
+    }
+    footer {
+        position: absolute;
+        background-color: transparent;
+        color: #000000;
+        text-align: center;
+        padding: 10px 0;
+        bottom: -150px; /* Menyesuaikan posisi */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120%;
+    }
+}
+
+
+
+

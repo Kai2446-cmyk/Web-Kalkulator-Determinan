@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylemateri.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Penjelasan Materi - Kalkulator Determinan</title>
+    </head>
+
+    <body>
+        <div class="subjudul">
+            <h2>Materi</h2>
+        </div>
+        <div class="isi">
+            <p>Determinan matriks merupakan selisih antara perkalian elemen-elemen pada diagonal utama dengan perkalian elemen-elemen pada diagonal sekunder. Matriks determinan dapat ditemukan dalam matriks persegi ordo 2x2 dan 3x3.</p>
+            <p>Determinan memiliki beberapa sifat penting, seperti:</p>
+            <ul>
+                <li>Jika determinan suatu matriks adalah nol, maka matriks tersebut tidak memiliki invers.</li>
+                <li>Jika determinan suatu matriks tidak sama dengan nol, maka matriks tersebut memiliki invers.</li>
+                <li>Determinan dari hasil perkalian dua matriks adalah produk dari determinan masing-masing matriks.</li>
+            </ul>
+            <p>Determinan Ordo 2x2</p>
+            <img src="Ordo2.jpg" alt="Ordo 2">
+            <p>Hasil kali elemen-elemen diagonal utama dikurangi hasil kali elemen-elemen diagonal samping atau dapat dituliskan dengan A = (a.d) - (b.c)</p>
+            <p>Determinan Ordo 3x3</p>
+            <img src="Ordo3.jpg" alt="Ordo 3">
+            <p>Hasil kali elemen-elemen diagonal utama dikurangi hasil kali elemen-elemen diagonal samping atau dapat dituliskan dengan</p>
+            <p>A = (A11-A22-A33) + (A12.A23.A31) + (A13.A21.A32) - (A31.A22.A13) - (A32.A23.A11) - (A33.A21.A12)</p>
+        </div>
+
+        <form action="Kalkulator.html" method="GET">
+            <button type="submit" class="btn">Kalkulator</button>
+        </form>
+        <form action="Home.html" method="GET">
+            <button type="submit" class="btn"><i class='bx bxs-home'></i></button>
+        </form>
+        <form action="#" method="GET">
+            <button type="submit" class="btn">Materi</button>
+        </form>
+
+        <footer>
+            <p>&copy; 2024 Kalkulator Determinan dan Penjelasan Materi</p>
+        </footer>
+
+    </body>
+
+</html>

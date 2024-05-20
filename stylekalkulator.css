@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('kalkulator.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.subjudul {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    font-size: 45px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper textarea {
+    position: absolute;
+    top: 35%;
+    left: 29%;
+    width: 750px;
+    height: 220px;
+    resize: none;
+    padding: 10px;
+    border: transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+.hitung button {
+    position: absolute;
+    top: 60%;
+    left: 62.3%;
+    background: #6E67FF;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 20px;
+    color: #ffffff;
+    padding: 3px 50px;
+
+}
+
+#result {
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.btn {
+    position: relative;
+    top: 350px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #6E67FF;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 50px;
+    margin: 78px;
+}
+
+footer {
+    position: absolute;
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+/* Penyesuaian untuk tampilan pada perangkat Android */
+
+/* Menentukan ukuran font dasar */
+html {
+    font-size: 16px;
+}
+
+/* Media query untuk perangkat Android */
+@media only screen and (max-width: 768px) {
+    /* Mengatur font size agar responsif */
+    html {
+        font-size: 14px;
+    }
+
+    /* Menyesuaikan posisi elemen */
+    .subjudul {
+        top: 15px; /* Menyesuaikan posisi */
+        left: 50px; /* Menyesuaikan posisi */
+        font-size: 30px; /* Mengurangi ukuran font subjudul */
+    }
+
+    .wrapper textarea {
+        top: 30%; /* Menyesuaikan posisi */
+        left: 10%; /* Menyesuaikan posisi */
+        width: 80%; /* Mengurangi lebar textarea */
+        height: 150px; /* Mengurangi tinggi textarea */
+        font-size: 20px; /* Mengurangi ukuran font textarea */
+    }
+
+    .hitung button {
+        top: 550px; /* Menyesuaikan posisi */
+        left: 32%; /* Mengembalikan ke tengah */
+        font-size: 20px; /* Mengembalikan ukuran font tombol */
+        padding: 10px 50px; /* Mengembalikan padding tombol */
+    }
+
+    #result {
+        top: 650px; /* Menyesuaikan posisi */
+        font-size: 30px; /* Mengurangi ukuran font result */
+    }
+
+    .btn {
+        top: 35px; /* Menyesuaikan posisi */
+        left: 35%;
+        transform: translateX(-50%);
+        font-size: 15px; /* Mengurangi ukuran font tombol */
+        padding: 15px 20px; /* Mengurangi padding tombol */
+        margin: 20px; /* Mengurangi margin tombol */
+    }
+
+    footer {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+        color: #000000;
+        text-align: center;
+        width: 100%;
+    }
+}
+
